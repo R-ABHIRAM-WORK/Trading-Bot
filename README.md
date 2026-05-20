@@ -16,34 +16,79 @@ This project is intentionally testnet-only.
 
 ## Setup
 
-1. Create and activate a Python 3.10+ virtual environment.
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/R-ABHIRAM-WORK/Trading-Bot.git
+cd Trading-Bot
+```
+
+### 2. Create a virtual environment
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Windows Command Prompt:
+
+```bat
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-2. Install dependencies.
+macOS/Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file from `.env.example`.
+### 4. Create your local environment file
+
+macOS/Linux:
 
 ```bash
-# macOS/Linux
 cp .env.example .env
+```
 
-# Windows PowerShell
+Windows PowerShell:
+
+```powershell
 copy .env.example .env
 ```
 
-4. Add Binance Futures Testnet credentials to `.env`.
+### 5. Add Binance Futures Testnet credentials
+
+Open `.env` in your editor and fill in your own testnet credentials:
 
 ```env
 BINANCE_API_KEY=your_binance_api_key_here
 BINANCE_SECRET_KEY=your_binance_secret_key_here
+```
+
+You can create Binance Futures Testnet credentials from the Binance Futures Testnet site. Do not use real Binance/mainnet keys.
+
+### 6. Check the app locally
+
+Run the test suite:
+
+```bash
+pytest
+```
+
+Run a CLI help check:
+
+```bash
+python cli.py --help
 ```
 
 ## CLI Usage
@@ -78,7 +123,36 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 --log-f
 streamlit run Trade.py
 ```
 
+Then open the local URL shown by Streamlit, usually:
+
+```text
+http://localhost:8501
+```
+
 The dashboard can place orders, show account balances/positions, and refresh tracked order statuses.
+
+## Run Checklist
+
+On a fresh device, the usual path is:
+
+```bash
+git clone https://github.com/R-ABHIRAM-WORK/Trading-Bot.git
+cd Trading-Bot
+python -m venv .venv
+# activate the virtual environment for your OS
+pip install -r requirements.txt
+cp .env.example .env
+# add your Binance Futures Testnet keys to .env
+pytest
+python cli.py --help
+streamlit run Trade.py
+```
+
+For Windows, replace `cp .env.example .env` with:
+
+```powershell
+copy .env.example .env
+```
 
 ## Logs
 
