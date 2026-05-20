@@ -1,0 +1,3 @@
+2026-05-18 20:24:22,919 | INFO | trading_bot | event=validated_order symbol=BTCUSDT side=BUY order_type=MARKET quantity=0.001 price=None
+2026-05-18 20:24:22,920 | INFO | trading_bot | event=binance_request method=POST endpoint=/fapi/v1/order params={"symbol":"BTCUSDT","side":"BUY","type":"MARKET","quantity":"0.001","recvWindow":5000,"newOrderRespType":"RESULT","timestamp":"<redacted>"}
+2026-05-18 20:24:23,383 | INFO | trading_bot | event=binance_response status_code=200 endpoint=/fapi/v1/order response={"orderId":"123456789","symbol":"BTCUSDT","status":"FILLED","executedQty":"0.001","avgPrice":"65000.00"}

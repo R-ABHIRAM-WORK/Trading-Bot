@@ -1,0 +1,9 @@
+.env
+*.log
+!examples/logs/*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+data/*.db
+data/*.sqlite
