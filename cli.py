@@ -182,7 +182,9 @@ def main() -> int:
                     },
                 )
                 print(f"Warning: order placed, but latest status lookup failed: {exc}")
+        print()
         print("Success: order placed on Binance Futures Testnet.")
+        print("Warning: testnet only. Review risk before placing any order.")
         return 0
 
     except ValidationError as exc:
