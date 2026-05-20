@@ -95,15 +95,15 @@ python cli.py --help
 
 ## CLI Usage
 
-CLI example:
+CLI walkthrough:
 
-MARKET order:
+Start with a MARKET order if you want to see the simplest path end-to-end:
 
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
 
-LIMIT order:
+Use a LIMIT order when you want the order to wait for a chosen price:
 
 ```bash
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 110000
@@ -123,6 +123,8 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 --log-f
 
 ![CLI run preview](assets/screenshots/cli-run.svg)
 
+The screenshot shows a successful MARKET order on testnet. The CLI prints the request summary first, then the response details, then a plain success line and a testnet-only warning.
+
 ## Streamlit UI
 
 ```bash
@@ -139,9 +141,11 @@ The dashboard can place orders, show account balances/positions, and refresh tra
 
 ![Streamlit trade ticket](assets/screenshots/streamlit-trade.png)
 
+The screenshot shows the first screen a beginner lands on: BTCUSDT selected by default, a tiny quantity prefilled, the order preview on the right, and a confirmation checkbox before the submit button becomes active.
+
 ## Run Checklist
 
-On a fresh device, the usual path is:
+On a fresh device, the happy path is:
 
 ```bash
 git clone https://github.com/R-ABHIRAM-WORK/Trading-Bot.git
