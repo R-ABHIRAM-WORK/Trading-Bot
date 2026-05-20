@@ -121,7 +121,7 @@ Use a custom log file:
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 --log-file logs/trading_bot.log
 ```
 
-![CLI run preview](assets/screenshots/cli-run.svg)
+![CLI run preview](assets/screenshots/cli-success-preview.svg)
 
 The screenshot shows a successful MARKET order on testnet. The CLI prints the request summary first, then the response details, then a plain success line and a testnet-only warning.
 
