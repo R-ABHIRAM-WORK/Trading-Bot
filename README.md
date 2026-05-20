@@ -4,6 +4,8 @@ A Python trading bot for Binance USDT-M Futures Testnet. It supports MARKET and 
 
 This project is intentionally testnet-only.
 
+> Important: use only Binance Futures Testnet credentials here. Do not connect real/mainnet keys.
+
 ## Features
 
 - Place MARKET and LIMIT orders on Binance Futures Testnet
@@ -93,6 +95,8 @@ python cli.py --help
 
 ## CLI Usage
 
+CLI example:
+
 MARKET order:
 
 ```bash
@@ -117,6 +121,8 @@ Use a custom log file:
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 --log-file logs/trading_bot.log
 ```
 
+![CLI run preview](assets/screenshots/cli-run.svg)
+
 ## Streamlit UI
 
 ```bash
@@ -130,6 +136,8 @@ http://localhost:8501
 ```
 
 The dashboard can place orders, show account balances/positions, and refresh tracked order statuses.
+
+![Streamlit trade ticket](assets/screenshots/streamlit-trade.png)
 
 ## Run Checklist
 
@@ -153,6 +161,12 @@ For Windows, replace `cp .env.example .env` with:
 ```powershell
 copy .env.example .env
 ```
+
+## Binance Docs
+
+If you want the official Binance reference while you work, start here:
+
+- [Binance USDT-M Futures API documentation](https://developers.binance.com/docs/derivatives/usds-margined-futures/)
 
 ## Logs
 
