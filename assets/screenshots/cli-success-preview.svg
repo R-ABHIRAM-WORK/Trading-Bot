@@ -21,8 +21,8 @@
 
   <text x="72" y="146" fill="#f8fafc" font-family="Consolas, Menlo, Monaco, monospace" font-size="30" font-weight="700">python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001</text>
 
-  <rect x="72" y="170" width="178" height="34" rx="17" fill="url(#success)"/>
-  <text x="95" y="193" fill="#082017" font-family="Consolas, Menlo, Monaco, monospace" font-size="18" font-weight="700">SUCCESSFUL ORDER</text>
+  <rect x="72" y="170" width="240" height="34" rx="17" fill="url(#success)"/>
+  <text x="94" y="193" fill="#082017" font-family="Consolas, Menlo, Monaco, monospace" font-size="18" font-weight="700">SUCCESSFUL ORDER</text>
 
   <text x="72" y="248" fill="#e7eef8" font-family="Consolas, Menlo, Monaco, monospace" font-size="24">Order Request Summary</text>
   <text x="72" y="290" fill="#d1d9e6" font-family="Consolas, Menlo, Monaco, monospace" font-size="22">Symbol: BTCUSDT</text>
